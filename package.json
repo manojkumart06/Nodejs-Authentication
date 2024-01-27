@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-authentication",
+  "version": "1.0.0",
+  "description": "a complete authentication system which can be used as a starter code for creating any new",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npx nodemon index.js"
+  },
+  "author": "Manoj Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "http": "^0.0.1-security"
+  }
+}
