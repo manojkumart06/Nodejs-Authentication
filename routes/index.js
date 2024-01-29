@@ -1,11 +1,10 @@
 const express = require('express');
 const router = express.Router();
-
-// Route for home page
-
-router.get('/', (req, res) => {
-    res.send('Hello, your server is running!');
-});
+const homeController = require('../controllers/homecontroller');
 
 
-module.exports = router;
+// set routes
+router.get('/',homeController.home);
+router.use('/users', require('./user'));
+
+module.exports = router; 
