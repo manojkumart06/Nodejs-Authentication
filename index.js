@@ -2,8 +2,7 @@ const express = require('express');
 const port = 8001;
 const path = require('path');
 const db = require('./config/dbconnection');
-//const http = require('http');
-//const server = http.createServer(app);
+
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
 app.use(expressLayouts);
