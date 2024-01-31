@@ -13,8 +13,16 @@ const UserSchema = new mongoose.Schema({
     name:{
         type:String,
         required:true
-    }}
-    ,{
+    },
+    verified: {
+        type: Boolean,
+        default: false
+      },
+      resetLink: {
+        type: String,
+        default: ''
+      }
+    },{
         timestamps:true
     }
 );
