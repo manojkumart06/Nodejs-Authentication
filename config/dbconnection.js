@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 //connect to the database
 //mongoose.connect('mongodb://localhost/nodejs_authenticator');
-const connect = await mongoose.connect(process.env.MONGO_URL);
+ mongoose.connect(process.env.MONGO_URL);
 
 //acquire the connection (to check if it's successfull)
 const db = mongoose.connection;
